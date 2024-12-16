@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Química</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é uma reação de neutralização?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>É uma reação entre um ácido e uma base que resulta na formação de um sal e água.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Robótica</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um sensor ultrassônico em robótica?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>É um dispositivo que utiliza ondas sonoras para medir a distância entre o sensor e um objeto.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Robótica</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é a função de um atuador em um robô?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Um atuador converte sinais elétricos em movimento mecânico, permitindo que o robô execute ações físicas.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Robótica</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um microcontrolador?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> É um pequeno computador em um único chip que controla as operações de um robô, processando entradas e enviando comandos aos atuadores e sensores.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é uma variável em programação?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> É um espaço na memória do computador que armazena dados que podem ser modificados durante a execução de um programa.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um loop "for" em programação?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> É uma estrutura de controle que permite repetir um bloco de código um número específico de vezes.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que faz a função "print()" em Python?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> A função "print()" exibe uma mensagem ou o valor de uma variável na tela.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Química</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é a fórmula química da água?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>H₂O.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Química</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é a Lei de Conservação de Massa?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> A Lei de Conservação de Massa afirma que, em uma reação química, a massa total dos reagentes é igual à massa total dos produtos.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>JOPAOUL: Onde a inovação encontra a harmonia. Transformando dados em ações para um futuro sustentável.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+
+    <script>
+        // Seleciona todos os cartões
+        const cartoes = document.querySelectorAll('.cartao');
+    
+        // Adiciona o evento de clique em cada cartão
+        cartoes.forEach(cartao => {
+            cartao.addEventListener('click', function() {
+                // Alterna a classe 'virado' no cartão clicado
+                cartao.classList.toggle('virado');
+            });
+        });
+    </script>
+</body>
+</html>
